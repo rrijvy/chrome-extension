@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome Extension</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        body {
+            width: 400px;
+            height: 300px;
+        }
+
+        .center_items {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .color_block {
+            width: 40px;
+            height: 40px;
+            border: none;
+            border-radius: 3px;
+            margin: 10px 8px;
+        }
+
+        .color_block_shadow {
+            box-shadow: 5px 5px 6px #5a5a5a,
+                -5px -5px 6px #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="text-center">Pick a color for background!</>
+    <div class="center_items">
+        <div class="color_block" style="background-color: #cc6d2e;"></div>
+        <div class="color_block" style="background-color: #2980b9;"></div>
+        <div class="color_block" style="background-color: #16a085;"></div>
+        <div class="color_block" style="background-color: #f1c40f;"></div>
+    </div>
+    <div class="text-center"><button id="btn" class="btn btn-primary" type="button">Save</button></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
